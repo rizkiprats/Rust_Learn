@@ -29,6 +29,7 @@ After creating or initializing the project, cargo will create file `src/main.rs`
 
 You can the run project with cargo command:
 ```bash
+cargo build
 cargo run
 ```
 
