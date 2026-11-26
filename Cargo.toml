@@ -2,5 +2,12 @@
 name = "Rust_Learn"
 version = "0.1.0"
 edition = "2024"
+# for disable auto detect main script in project
+autobins = false
+
+# for costumize main script
+[[bin]]
+name = "Rust_Learn"
+path = "src/app.rs"
 
 [dependencies]
