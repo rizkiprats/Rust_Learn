@@ -12,3 +12,16 @@ Check that the tools are available:
 rustc --version
 cargo --version
 ```
+
+Start initialized Cargo to Create project from selected folder with configuration file.
+```bash
+cargo init
+```
+`cargo init --bin` command to create executeable project aplication.
+
+`cargo init --lib` command to create library project for use in other project.
+
+OR Create new project folder iclude with configuration file.
+```bash
+cargo new <project name>
+```
