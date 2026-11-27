@@ -6,10 +6,12 @@ version = 4
 name = "Rust_Learn"
 version = "0.1.0"
 dependencies = [
+ "data_types",
  "guessing_game",
  "hello_cargo",
  "inquire",
  "strum",
+ "variables",
 ]
 
 [[package]]
@@ -79,6 +81,10 @@ checksum = "acdd7c62a3665c7f6830a51635d9ac9b23ed385797f70a83bb8bafe9c572ab2b"
 dependencies = [
  "winapi",
 ]
+
+[[package]]
+name = "data_types"
+version = "0.1.0"
 
 [[package]]
 name = "derive_more"
@@ -426,6 +432,10 @@ name = "unicode-width"
 version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ca718471876992059f251e33aafc334346ada08042b7661dd1fe313a9bced557"
+
+[[package]]
+name = "variables"
+version = "0.1.0"
 
 [[package]]
 name = "wasi"

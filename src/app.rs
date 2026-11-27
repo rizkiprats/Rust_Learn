@@ -11,6 +11,10 @@ mod hello_world_module;
 use hello_cargo;
 //call guessing game lib
 use guessing_game;
+//call variables declaration lib
+use variables;
+//call data types lib
+use data_types;
 
 // create enum for selection menu
 #[derive(Debug, Clone, Copy, Display, EnumIter)]
@@ -23,6 +27,12 @@ enum Selection {
 
     #[strum(serialize = "Guessing Game")]
     GuessingGame,
+
+    #[strum(serialize = "Variables Declaration")]
+    VariablesDeclaration,
+
+    #[strum(serialize = "Data Types")]
+    DataTypes,
 
     #[strum(serialize = "Exit")]
     Exit,
@@ -135,7 +145,7 @@ fn main(){
                 };
             }
             Ok(Selection::HelloCargoLib) => {
-                println!("Running Hello Cargo Lib...");
+                println!("Running Hello Cargo Lib Test...");
                 hello_cargo::test();
 
                 // call after selection helper
@@ -153,7 +163,27 @@ fn main(){
                     println!("See you next time!");
                     break;
                 };
-            } 
+            }
+            Ok(Selection::VariablesDeclaration) => {
+                println!("Running Variables Declaration Test...");
+                variables::test();
+
+                // call after selection helper
+                if !offer_after_selection() {
+                    println!("See you next time!");
+                    break;
+                };
+            }
+            Ok(Selection::DataTypes) => {
+                println!("Data Type Test...");
+                data_types::test();
+
+                // call after selection helper
+                if !offer_after_selection() {
+                    println!("See you next time!");
+                    break;
+                };
+            }
             Ok(Selection::Exit) => {
                 println!("See you next time!");
                 break;
