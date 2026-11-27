@@ -5,3 +5,10 @@ version = 4
 [[package]]
 name = "Rust_Learn"
 version = "0.1.0"
+dependencies = [
+ "hello_cargo",
+]
+
+[[package]]
+name = "hello_cargo"
+version = "0.1.0"

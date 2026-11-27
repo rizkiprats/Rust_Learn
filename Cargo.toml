@@ -11,3 +11,4 @@ name = "Rust_Learn"
 path = "src/app.rs"
 
 [dependencies]
+hello_cargo = { path = "hello_cargo" }
