@@ -8,7 +8,7 @@ fn main() {
     // Generate a random number between 1 and 100
     let secret_number = rand::rng().random_range(1..=100);
 
-    println!("The secret number is: {}", secret_number);
+    // println!("The secret number is: {}", secret_number);
 
     // Start a loop to allow the user to guess multiple times
     loop {
@@ -44,4 +44,8 @@ fn main() {
                 
         }
     }
+}
+
+pub fn export_main(){
+    main();
 }

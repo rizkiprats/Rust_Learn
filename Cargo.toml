@@ -12,3 +12,6 @@ path = "src/app.rs"
 
 [dependencies]
 hello_cargo = { path = "hello_cargo" }
+guessing_game = { path = "guessing_game" }
+inquire = "0.9.5"
+strum = { version = "0.28.0", features = ["derive"] }
