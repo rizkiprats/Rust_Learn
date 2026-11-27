@@ -52,3 +52,7 @@ fn main() {
     // 5. Unused variable prefix (_) to prevent compiler warnings
     let _unused_variable = 42; //prefixed with underscore so the compiler ignores it
 }
+
+pub fn export_main(){
+    main();
+}
