@@ -1,5 +1,5 @@
 // call hello world script as a module
-#[path = "../hello_world/hello_world.rs"]
+#[path = "hello_world/hello_world.rs"]
 mod hello_world_module;
 
 fn main(){
