@@ -25,6 +25,7 @@ fn main() {
     println!("The value of spaces is: {}", spaces);
 
     let mut spaces = "   "; //spaces is a string literal and mutable
-    spaces = spaces.len().to_string(); //spaces is now a string
+    let binding = spaces.len().to_string(); //using let binding to create a longer lived value, binding is now a string
+    spaces = &binding; //spaces is now a string
     println!("The value of spaces is: {}", spaces);
 }
